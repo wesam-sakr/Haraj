@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herag</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+        />
+
+    <!-- font awesom link  -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+        />
+    <!-- owl-carousel link -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- rateyo link -->
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+
+    <!-- nice select link -->
+    <link rel="stylesheet" href="css/nice-select.css" />
+
+    <!-- WoW link -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- animate link -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+<!-- aos link -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!-- aos link -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/panzoom.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+  <body>
+
+    <!-- top-nav -->
+    <nav class="navigation navbar navbar-expand-lg">
+      <div class="container">
+          <div class="" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page"
+                          href="#">الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page"
+                          href="cars.html">حراج سيارات</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="devices.html">أجهزة</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="real-estates.html">عقارات</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="animals.html">مواشي
+                          وحيوانات وطيور</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="furniture.html">أثاث</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="services.html">خدمات</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="more-services.html">أقسام
+                          أكثر</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+  <nav class="main-nav navbar navbar-expand-lg top-0 p-0"
+      data-aos="fade-left" data-aos-duration="800">
+      <div class="container">
+          <a class="navbar-brand m-0" href="index.html"><img
+                  src="images/logo.png" alt=""></a>
+
+          <div class="collapse show navbar-collapse justify-content-between
+              align-items-center" id="navbarSupportedContent">
+              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="chat.html">
+                          <i class="bi bi-chat-left-dots"></i>
+                          <span>الرسائل</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="notification.html" class="nav-link">
+                          <i class="bi bi-bell"></i>
+                          <span>الإشعارات</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="fav.html" class="nav-link">
+                          <i class="bi bi-heart"></i>
+                          <span>المفضلة</span>
+                      </a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="follow.html" class="nav-link">
+                          <i class="bi bi-person-plus"></i>
+                          <span>المتابعة</span>
+                      </a>
+                  </li>
+
+              </ul>
+          </div>
+
+          <!-- lang -->
+          <div class="options">
+              <a role="button" id="lang" class="lang">
+                  <span class="px-1">
+                      English
+                  </span>
+                  <i class="bi bi-globe"></i>
+              </a>
+              <!--  if auth  -->
+              <a href="login.html" class="login d-none">
+                  <i class="fa-solid fa-user px-1"></i>
+                  <span>
+                      تسجيل دخول
+                  </span>
+              </a>
+              <!--  else -->
+              <span class="profile-setting position-relative">
+                  <i class="fa-solid fa-user px-1"></i>
+                  <span>
+                      اسم المستخدم
+                  </span>
+                  <i class="arrow bi bi-caret-down-fill"></i>
+                  <div class="setting">
+                      <ul>
+                          <li>
+                              <button class=""
+                              data-bs-toggle="modal"
+                              data-bs-target="#exampleModal-setting"
+                              type="button">
+                                  <i class="bi bi-gear"></i>
+                                  <span> الاعدادات</span>
+                              </button>
+                          </li>
+                          <li>
+                              <button>
+                                  <i class="bi bi-box-arrow-left"></i>
+                                  تسجيل الخروج
+                              </button>
+                          </li>
+                      </ul>
+                  </div>
+              </span>
+          </div>
+      </div>
+  </nav>
+
+  
+    <section class="evaluation featured py-5">
+      <div class="container">
+        <a href="./Calculation.html" class="py-5">
+          <i class="bi bi-arrow-right"></i>
+        </a>
+
+        <h5 class="py-3" data-aos="zoom-in" data-aos-duration="800" >اتفاقية الاستخدام</h5>
+        <p data-aos="zoom-in" data-aos-duration="800" >
+          إن اتفاقية الاستخدام هذه وخصوصية الاستخدام ، والشروط والبنود ، وجميع
+          السياسات التي تم نشرها على مؤسسة موقع حراج للتسويق الإلكتروني وضعت
+          لحماية وحفظ حقوق كل من ( مؤسسة موقع حراج للتسويق الإلكتروني ) و (
+          المستخدم الذي يصل إلى الموقع بتسجيل او من دون تسجيل )أو ( العميل
+          المستفيد من الإعلانات بتسجيل أو من دون تسجيل).
+        </p>
+        <p class="py-4" data-aos="zoom-in" data-aos-duration="800" >
+          تخضع البنود والشروط والأحكام والمنازعات القانونية للقوانين والتشريعات
+          والأنظمة المعمول بها في المملكة العربية السعودية
+        </p>
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+          لكونك مستخدم فأنك توافق على الالتزام بكل ما يرد بهذه الاتفاقية في حال
+          استخدامك للموقع او في حال الوصول اليه او في حالة التسجيل في الخدمة.
+          يحق لموقع حراج التعديل على هذه الاتفاقية في أي وقت وتعتبر ملزمة لجميع
+          الأطراف بعد الإعلان عن التحديث في الموقع أو في أي وسيلة آخري
+        </p>
+
+        <h5 class="py-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">تعريف</h5>
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+          مؤسسة موقع حراج للتسويق الإلكتروني هي الجهة المالكة لموقع حراج ، مؤسسة
+          سعودية ١٠٠ ٪ مقرها الرئيسي الرياض وهي منصة الكترونية تمكن المستخدم
+          (منشئ السجل الإلكتروني ) من فتح محل إلكتروني لتقديم خدماته وإيصالها
+          للعميل المستهدف (مستقبل السجل الإلكتروني ) وفق شروط وضوابط محددة وتحت
+          مسؤوليته. ويشار إليها بهذه الاتفاقية باسم ( مؤسسة موقع حراج للتسويق
+          الإلكتروني ) أو ( نحن ) أو ( لنا ) أو ( موقع حراج ) ، وتمثل هنا الطرف
+          الأول
+        </p >
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+          المستخدم هو ( الفرد او المؤسسة أو الشركة ) المنشئ للسجل الإلكتروني
+          الذي يصل إلى الموقع ويستفيد من خدماته بشكل مباشر أو غير مباشر ، ويشار
+          إليه بالعضو أو الطرف الثاني, ويعتبر هو المسؤول عن محتوى الإعلان
+          مسؤولية كاملة وملتزم بضوابط وشروط المحتوى الموضحة من قبل الموقع ويتحمل
+          تبعات وأضرار محتوى الإعلان
+        </p>
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          العميل: هو الجهة (الفرد أو المؤسسة أو الشركة) التي ينتهي إليه السجل
+          الإلكتروني ، والمستهدفة من قبل المستخدم (منشئ السجل الإلكتروني ).
+          السجل الإلكتروني: هو البيانات التي تنشأ أو تحفظ أو ترسل من قبل
+          المستخدم ( منشئ السجل الإلكتروني ) وتكون على شكل تقديم خدمة أو طلب
+          خدمة او ردود او رسائل خاصة
+        </p>
+        <h5 class="py-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">شروط الاستخدام</h5>
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          بصفتك طرف ثاني في هذه الاتفاقية فإنه بموافقتك على الاستفادة من خدمات
+          الموقع فعليك الالتزام بما يلي :
+        </p>
+        <ul class="pe-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          <li>
+            بعدم الإعلان أو تحميل محتوى أو عناصر غير ملائمة للتصنيفات المتاحة في
+            الموقع و المسموح ببيعها. وعليك مراجعة شروط الإعلان و السلع الممنوعة.
+            بعدم الاختراق أو التحايل على قوانين وسياسة وأنظمة الموقع أو أي حقوق
+            تتعلق بطرف ثالث
+          </li>
+          <li>
+            بعدم نسخ الإعلان من مؤسسة موقع حراج للتسويق الإلكتروني وإعادة نشرها
+            في مواقع أخرى
+          </li>
+          <li>
+            بعدم استخدام أي وسيلة غير شرعية للوصول للإعلانات أو لبيانات
+            المستخدمين الآخرين أو انتهاك لسياسة وحقوق مؤسسة موقع حراج للتسويق
+            الإلكتروني،أو الوصول لمحتوى الموقع أو تجميع وتحصيل معلومات وبيانات
+            تخص موقع حراج أو عملاء الموقع والاستفادة منها بأي شكل من الأشكال أو
+            إعادة نشرها
+          </li>
+          <li>
+            بعدم استخدام خدماتنا إذا كنت غير مؤهل قانونيا لإتمام هذه الاتفاقية.
+            على سبيل المثال أنك أقل من 18 سنة أو أنك محجوب بشكل مؤقت أو دائم من
+            استخدام الموقع
+          </li>
+          <li>
+            بعدم التلاعب بأسعار السلع سواء في البيع او الشراء وإلحاق الضرر
+            بالمستخدمين الآخرين
+          </li>
+          <li>
+            بعدم نشر إعلانات أو تعليقات كاذبة أو غير دقيقة أو مضللة أو خادعة أو
+            قذف ، أو تشهير
+          </li>
+          <li>
+            بعدم التعرض للسياسات أو السيادات الدولية أو الشخصيات المعتبرة أو أي
+            مناقشات لا تتعلق بالبيع والشراء المشروعة في مؤسسة موقع حراج للتسويق
+            الإلكتروني
+          </li>
+          <li>
+            بعدم نقل حسابك أو نشاطك إلى مواقع اخرى بالوقت الذي هو يحمل شعار أو
+            خدمات المؤسسة
+          </li>
+          <li>
+            بعدم انتهاك حقوق الطبع والنشر والعلامات التجارية، وبراءات الاختراع،
+            والدعاية وقواعد البيانات أو غيرها من حقوق الملكية أو الفكرية التي
+            تنتمي لمؤسسة موقع حراج للتسويق الإلكتروني أو مرخصة لمؤسسة موقع حراج
+            للتسويق الإلكتروني
+          </li>
+          <li>بعدم انتهاك حقوق الآخرين الملكية أو الفكرية أو براءة الاختراع</li>
+          <li>
+            بعدم الاعلان عن منتجات التبغ والدخان (هذه السلع تعرضك للحصول على
+            مخالفة من قبل الجهات المختصة) بعدم انتهاك أنظمة حقوق الإنسان وبعدم
+            المتاجرة بالأشخاص بأي شكل من الأشكال ويجب عليك الإلتزام بضوابط
+            الإعلان عن تقديم الخدمات العمالية. تتعهد بالالتزام بضوابط الإعلان
+            العقاري التي حددتها الهيئة العامة للعقار بعدم انتهاك أنظمة حماية
+            الحياة الفطرية. بعدم جمع معلومات عن مستخدمي الموقع الآخرين لأغراض
+            تجارية أو غيرها
+          </li>
+          <li>
+            بعدم الإقدام على أي ما من شأنه إلحاق الضرر بسمعة مؤسسة موقع حراج
+            للتسويق الإلكتروني. بعدم انتحال صفة مؤسسة موقع حراج للتسويق
+            الإلكتروني أو ممثل لها أو موظف فيها أو أي صفة توحي بأنك تابع للمؤسسة
+            ما لم يكون لديك أذن رسمي من المؤسسة
+          </li>
+          <li>
+            يُمنع إستخدام هذه الخدمة من قِبل أي مستخدم غير بشري ويستثنى من ذلك
+            المستخدمين الغير بشريين التابعين للشركات التالية فقط
+          </li>
+          <li>Google</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+          <li>
+            إن عدم التزامك بتلك الشروط يمنح مؤسسة موقع حراج للتسويق الإلكتروني
+            الحق كاملا بحجب عضويتك ومنعك من الوصول للموقع وإضافة رقم هاتفك في
+            القائمة السوداء دون ادنى مسؤولية و دون الحاجة لإخطارك بذلك وأنت هنا
+            تتعهد بعدم العودة لاستخدام الموقع إلى بعد موافقة الموقع على ذلك
+          </li>
+        </ul>
+        <h5 class="py-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">مسؤولية مؤسسة موقع حراج للتسويق الإلكتروني</h5>
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          تقدم مؤسسة موقع حراج للتسويق الإلكتروني خدمة تمكين المستخدم من عرض
+          سلعته وفق سياسة الاستخدام المتفق عليها ولا نقدم أي ضمانات ولا نتحمل أي
+          مسؤولية في حالة عدم التزام المستخدم بسياسة استخدام الموقع ولا نتحمل
+          المسؤولية عن أي مخاطرة أو أضرار أو تبعات أو خسائر تقع على البائع أو
+          المشتري أو أي طرف آخر وعلى من لحق به الضرر إبلاغنا بذلك من خلال رابط
+          اتصل بنا وشرح الضرر الواقع عليه وستقوم مؤسسة موقع حراج للتسويق
+          الإلكتروني باتخاذ الإجراء حسب نوع الواقعة دون أي مسؤولية . إن استخدامك
+          لموقع حراج يعني أنك تتحمل كامل المسؤولية عن محتوى الإعلان الذي تقوم
+          بنشره، وانك تخولنا في حفظ بياناتك التي قمت بإدخالها بخوادم المؤسسة
+          ولنا حق الإطلاع عليها ومراجعتها. كما أنك توافق على أحقيتنا في مراقبة
+          الرسائل الخاصة عند الحاجة لضمان خلوها من مخالفات اتفاقية الاستخدام
+          ولنا حق حذف الإعلان والتصرف بالصور المرفقة عند الحاجة لذلك. تعتبر
+          تعاميم وقرارات وتوجيهات إدارة ومشرفي الموقع ملزمة للطرف الثاني بعد
+          إيصالها له عبر الرسائل الخاصة بالموقع أو الجوال أو البريد الإلكتروني
+          أو عبر نظام الإشعارات ، وعليه الإلتزام بها والعمل بموجبها. كما أنك
+          توافق أنه في حال مخالفتك لأنظمة منصة حراج والتسبب بأضرار للمنصة فإنه
+          يحق لإدارة مؤسسة موقع حراج مطالبتك بالتعويضات عن جميع الأضرار التي
+          لحقت بها بسبب مخالفتك للأنظمة بما في ذلك أتعاب المحاماة في جميع
+          القضايا المتعلقة بمخالفاتك.
+        </p>
+        <h5 class="py-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">شروط العضوية</h5>
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          العضوية هي: اسم المستخدم الذي سجل به الشخص في موقع حراج والتي ترتبط
+          برقم جواله ويجب أن تكون خاضعة للشروط التالية: يلزم اختيار اسم لائق
+          ومناسب خلال عملية التسجيل يُمنع استخدام اكثر من عضوية في الموقع لكل
+          شخص أو جهة يجب ان تقوم بتحديث رقم جوالك المرتبط بالعضوية في حال تغيير
+          رقم جوالك او فقدانه اذا كان اسم عضويتك يحتوي على اسم تجاري أو علامة
+          تجارية ، يجب ان تكون المالك للعلامة التجارية او مخول لك باستخدام الاسم
+          او العلامة التجارية. يمنع بيع العضوية أو التنازل عنها لطرف آخر أو
+          السماح لأي طرف آخر باستخدامها ويتعبر صاحب العضوية الأول هو المسؤول
+          عنها تجاه أي مخالفات أو مسؤوليات قانونية ، وسيعتبر كلا الطرفين في حالة
+          البيع أو التنازل مخالفين لسياسة الاستخدام في موقع حراج يلتزم العضو
+          بعدم مشاركة معلومات عضويته الخاصة به مع أي أحد. يلتزم "موقع حراج"
+          باتخاذ المعايير اللازمة لحماية البيانات وحفظها، علما بأن شبكة الانترنت
+          ليست وسيلة آمنة بنسبة ١٠٠٪ لحفظ المعلومات السرية ( راجع وثيقة الخصوصية
+          ) تتبادل الخدمة بعض المعلومات مع جهازك لغرض تقديم الخدمة لك يستخدم
+          الموقع برامج احصائية Google Analytics و ذلك لأجل تطوير الخدمة وتحسينها
+        </p>
+        <h5 class="py-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">شروط اضافة محتوى للموقع</h5>
+        <ul class="pe-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          <li>تتعهد بعدم الإعلان عن أي سلعة ممنوعة بالموقع</li>
+          <li>تتعهد بعدم اضافة أي ردود ممنوعة بالموقع</li>
+          <li>تتعهد بعدم ارسال أي رسائل ممنوعة بالموقع</li>
+          <li>تتعهد بتحديد سعر بيع السلعة المعلن عنها</li>
+          <li>
+            تتعهد بمتابعة إعلانك والرد على استفسارات العملاء من خلال الردود او
+            من خلال الرسائل الخاصة
+          </li>
+          <li>تتعهد بالالتزام بسياسة الإعلانات المكررة</li>
+          <li>يلزم أن تكون المادة الإعلانية المعلن عنها سلعة أو خدمة فقط</li>
+          <li>يجب أن يكون الإعلان كامل التفاصيل وفي القسم الصحيح</li>
+          <li>يحق للموقع حذف أي إعلان من دون ذكر سبب الحذف</li>
+          <li>يُمنع نسخ أي إعلان من الموقع</li>
+          <li>
+            إذا كنت تقدم خدمة أو تبيع سلعة تحتاج تصريح، مثل تقديم خدمات التعقيب،
+            يجب ان يكون لديك التصاريح اللازمة لذلك
+          </li>
+          <li>يُمنع استخدام أي جزء من أي إعلان في الموقع</li>
+          <li>
+            يلتزم المعلن بأن تكون الصور المضافة في الإعلان لنفس السلعة المعلن
+            عنها
+          </li>
+          <li>
+            صور المحتوى يجب أن تكون لائقة أخلاقيا وذات جودة عالية ولا تخالف نظام
+            وزارة العمل أو حقوق الإنسان أو أي جهة حكومية أو خاصة
+          </li>
+          <li>
+            صور المحتوى يجب أن تكون لائقة أخلاقيا وذات جودة عالية ولا تخالف نظام
+            وزارة العمل أو حقوق الإنسان أو أي جهة حكومية أو خاصة
+          </li>
+          <li>
+            يلتزم المعلن بعدم إضافة أكثر من 5 إعلانات في الموقع لنفس السلعة
+          </li>
+          <li>
+            يجب الإلتزام بعدم الإعلان عن السلع والخدمات التي تندرج في قائمة
+            السلع و الخدمات الممنوعة
+          </li>
+          <li>
+            كما يجب أيضا الالتزام بقائمة الردود الممنوعة و الرسائل الممنوعة
+          </li>
+          <li>تتعهد بعدم الإعلان لشخص لا تعرفه او التسجيل لشخص لا تعرفه</li>
+          <li>
+            يخضع تحديث وتعديل الإعلان لجميع الشروط والضوابط في هذه الاتفاقية
+            ويعتبر المستخدم مسؤول عن أي مخالفات وقعت أثناء إنشاء الإعلان او بعد
+            التحديث او التعديل. الإنشاء والتحديث والتعديل مسؤولية المستخدم (
+            منشئ السجل الإلكتروني )
+          </li>
+          <li>
+            عليك بتحديث الإعلان. إذا لم يحدث المستخدم الإعلان فإنه سيتم حذف
+            الإعلان بشكل تلقائي
+          </li>
+        </ul>
+        <h5 class="py-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">ضوابط الإعلان عن تقديم الخدمات العمالية:</h5>
+        <ul class="pe-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          <li>
+            للإعلان عن تقديم الخدمات العمالية يجب أن تكون مكتب استقدام حاصل على
+            ترخيص لممارسة هذا النشاط
+          </li>
+          <li>
+            يجب ألا يتضمن الإعلان مفردات أو عبارات من شأنها أن تمسمن كرامة
+            العمال الوافدة والعمالة المنزلية وممن في حكمهم ، ومن ذلك على سبيل
+            المثال لا الحصر استخدام عبارات ( للبيع ،للشراء ، للتنازل ) وتستبدل
+            بعبارات ( نقل خدمات) يجب ألا يتضمن الإعلان عبارة خادم أو خادمة ، أو
+            شغالة ، وتستبدل بعبارة عامل أو عاملة
+          </li>
+          <li>
+            يجب ألا يتضمن الإعلان تحميل العامل أي تكاليف مالية مقابل نقل الخدمة
+            بأي حال من الأحوال
+          </li>
+          <li>
+            يجب ألا يتضمن الإعلان نشر لصور شخصية أو بطاقة هوية أو إقامة أو جواز
+            السفر أو أية بيانات شخصية أخرى للعمالة الوافدة والعمالة المنزلية ومن
+            في حكمهم
+          </li>
+          <li>
+            ألا يتضمن الإعلان الإشارة إلى تلقي ناقل الخدمة أو المعلن أو من في
+            حكمه تلقي مبالغ مالية لنقل الخدمات بأي حال من الأحوال
+          </li>
+          <li>يجب أخذ موافقه من العامل قبل نقل الخدمة</li>
+        </ul>
+        <h5 class="py-3" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">السلع الممنوعة</h5>
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          السلعة الموضحة هي السلع الممنوعة في الموقع. هذه السلع ممنوع الاعلان
+          عنها في الموقع و ممنوع ايضا شرائها عبر الموقع. نحن نقوم بحظر المعلن
+          الذي يقوم بالاعلان عن هذه السلع و نقوم بحظر من يتجاوب معه عبر الرسائل
+          الخاصة أو عبر الردود. نرجو ملاحظة ان ليس هناك تنبيه قبل الحظر وان
+          الحظر نهائي لانقاش فيه
+        </p>
+        <p data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">السلع الممنوعة هي:</p>
+        <ul class="pe-4" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+          <li>جميع السلع الممنوعة حسب قوانين المملكة العربية السعودية</li>
+          <li>
+            التقسيط و المنتجات البنكية هذه السلع ممنوعه حتى لوكانت تعتبر شرعية
+            الأدوية والمنتجات الطبية والصحية هذه السلع ممنوعه حتى لو كان مسموح
+            بها في قوانين وزارة الصحة وحتى لو كانت سلع موصى بها من الوازرة
+          </li>
+          <li>
+            التسويق الشبكي يمنع نهائيا اي نوع من التسويق الشبكي مهما كان نوعه او
+            صفته أو طريقته
+          </li>
+          <li>
+            الأسلحة بمافيها الصواعق والمسدسات و الرشاشات واسلحة الحماية الشخصية
+            و مستلزماتها حتى لو كانت مرخصة المنتجات الجنسية بكافة أشكالها
+            وأنواعها
+          </li>
+          <li>الأسهم و إدارة المحافظ والعملات وتسويقها وجميع مايتعلق بذلك</li>
+          <li>أجهزة الليزر وأجهزة التجسس و التنصت</li>
+          <li>
+            المواقع والمنتديات والخدمات الإلكترونية والإيميلات وبيع العضويات
+            والبرامج
+          </li>
+          <li>
+            بيع أي سلعه مجانية مثال على ذلك الإيميلات وحسابات تويتر وانستقرام
+            وغيرها
+          </li>
+          <li>
+            السلع التي فيها إعتداء على حقوق الملكية الفكرية مثلا البرامج
+            المنسوخة والأفلام المنسوخة منتجات التبغ
+          </li>
+          <li>
+            الإعلان عن منتجات أو خدمات تتطلب ترخيص من دون الحصول على الترخيص من
+            الجهة المنظمة
+          </li>
+          <li>
+            الأجهزة الممنوعة مثل: أجهزة التشويش أو التشفير أو تقوية إشارة الجوال
+          </li>
+          <li>الأجهزة ذات المخاطر الأمنية</li>
+          <li>
+            الإعلان عن شرائح اتصال او خدمات اتصالات من دون الحصول على التراخيص
+            اللازمة و من دون رفعها لنظام التراخيص بالموقع
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+          <nav class="navbar navbar-expand-lg">
+              <div class="row w-100 justify-content-between">
+                  <div class="col-auto">
+                      <ul>
+                          <li class="nav-item">
+                              <a href="Calculation.html" class="nav-link">حساب وسداد العمولة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="featured.html" class="nav-link">الاعلانات
+                                  المميزة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="membership.html" class="nav-link">الإشتراك
+                                  بعضوية معارض السيارات ومكاتب العقار</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="goods-services.html" class="nav-link">سداد
+                                  رسوم السلع والخدمات المكررة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="ads.html" class="nav-link">طلب
+                                  تقرير سيارة</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-auto">
+                      <ul>
+                          <li class="nav-item">
+
+                              <a href="Agreement.html" class="nav-link active">اتفاقية
+                                  الإستخدام</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="Verification.html" class="nav-link">توثيق
+                                  العضوية وإضافة التراخيص</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="evaluation.html" class="nav-link">نظام
+                                  التقييم</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="discount.html" class="nav-link">نظام
+                                  الخصم</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="Blacklist.html" class="nav-link">القائمة
+                                  السوداء وإرشادات التعامل</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-auto">
+                      <ul>
+                          <li class="nav-item">
+
+                              <a href="advertisements.html" class="nav-link">قائمة
+                                  السلع والإعلانات الممنوعة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="common-questions.html" class="nav-link">الأسئلة
+                                  الشائعة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="contact.html" class="nav-link">اتصل بنا</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+      <div class="sub-footer">
+          <div class="container">
+              <div class="copyRight position-relative">
+                  <a href="https://smartvision4p.com/" class="link"></a>
+                  <p> جميع الحقوق محفوظة لموقع <span>سمارت فيجن</span></p>
+                  <img src="images/logooo.png" alt="">
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- owl-carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- font awesom script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- rateyo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <!-- nice select script -->
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <!-- wow script -->
+    <script src="js/wow.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.6.2/jQuery.print.min.js" integrity="sha512-t3XNbzH2GEXeT9juLjifw/5ejswnjWWMMDxsdCg4+MmvrM+MwqGhxlWeFJ53xN/SBHPDnW0gXYvBx/afZZfGMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+
+  </body>
+</html>

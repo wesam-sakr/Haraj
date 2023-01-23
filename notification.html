@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Herag</title>
+
+        <link rel="icon" type="image/x-icon" href="images/logo.png" />
+
+        <!-- Bootstrap link  -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+            />
+
+        <!-- font awesom link  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+            />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+            />
+        <!-- owl-carousel link -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+        <!-- rateyo link -->
+        <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+
+        <!-- nice select link -->
+        <link rel="stylesheet" href="css/nice-select.css" />
+
+        <!-- WoW link -->
+        <link rel="stylesheet" href="css/animate.css" />
+
+        <!-- animate link -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+ <!-- aos link -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ <!-- aos link -->
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/panzoom.css">
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="css/style.css" />
+
+    </head>
+  <body>
+
+    <!-- top-nav -->
+    <nav class="navigation navbar navbar-expand-lg">
+        <div class="container">
+            <div class="" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page"
+                            href="cars.html">حراج سيارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="devices.html">أجهزة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="real-estates.html">عقارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="animals.html">مواشي
+                            وحيوانات وطيور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="furniture.html">أثاث</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">خدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="more-services.html">أقسام
+                            أكثر</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="main-nav navbar navbar-expand-lg top-0 p-0"
+        data-aos="fade-left" data-aos-duration="800">
+        <div class="container">
+            <a class="navbar-brand m-0" href="index.html"><img
+                    src="images/logo.png" alt=""></a>
+
+            <div class="collapse show navbar-collapse justify-content-between
+                align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="chat.html">
+                            <i class="bi bi-chat-left-dots"></i>
+                            <span>الرسائل</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="notification.html" class="nav-link">
+                            <i class="bi bi-bell"></i>
+                            <span>الإشعارات</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="fav.html" class="nav-link">
+                            <i class="bi bi-heart"></i>
+                            <span>المفضلة</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="follow.html" class="nav-link">
+                            <i class="bi bi-person-plus"></i>
+                            <span>المتابعة</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- lang -->
+            <div class="options">
+                <a role="button" id="lang" class="lang">
+                    <span class="px-1">
+                        English
+                    </span>
+                    <i class="bi bi-globe"></i>
+                </a>
+                <!--  if auth  -->
+                <a href="login.html" class="login d-none">
+                    <i class="fa-solid fa-user px-1"></i>
+                    <span>
+                        تسجيل دخول
+                    </span>
+                </a>
+                <!--  else -->
+                <span class="profile-setting position-relative">
+                    <i class="fa-solid fa-user px-1"></i>
+                    <span>
+                        اسم المستخدم
+                    </span>
+                    <i class="arrow bi bi-caret-down-fill"></i>
+                    <div class="setting">
+                        <ul>
+                            <li>
+                                <button class=""
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal-setting"
+                                type="button">
+                                    <i class="bi bi-gear"></i>
+                                    <span> الاعدادات</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    تسجيل الخروج
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="notification py-5">
+      <div class="container">
+        <div class="notifi" data-aos="fade-up" data-aos-duration="800">
+            <h4 class="py-4 title-notifi">الإشعارات</h4>
+
+            <div class="py-4">
+                <div class="d-flex align-items-center item-notifi">
+                    <div class="img-notifi p-3">
+                        <i class="fa-solid fa-share icon-nitifi"></i>
+                    </div>
+                    <div class="px-4">
+                        <div class="d-flex justify-content-between align-items-center pb-4">
+                            <h5>تم الرد على إعلانك</h5>
+                            <button
+                            type="button "
+                            class="btn-close m-0"
+                            aria-label="Close"
+                          >
+                           
+                          </button>
+                        </div>
+                        <p>
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center item-notifi">
+                    <div class="img-notifi p-3">
+                        <i class="fa-solid fa-share icon-nitifi"></i>
+                    </div>
+                    <div class="px-4">
+                        <div class="d-flex justify-content-between align-items-center pb-4">
+                            <h5>تم الرد على إعلانك</h5>
+                            <button
+                            type="button "
+                            class="btn-close m-0"
+                            aria-label="Close"
+                          >
+                           
+                          </button>
+                        </div>
+                        <p>
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center item-notifi">
+                    <div class="img-notifi p-3">
+                        <i class="fa-solid fa-share icon-nitifi"></i>
+                    </div>
+                    <div class="px-4">
+                        <div class="d-flex justify-content-between align-items-center pb-4">
+                            <h5>تم الرد على إعلانك</h5>
+                            <button
+                            type="button "
+                            class="btn-close m-0"
+                            aria-label="Close"
+                          >
+                           
+                          </button>
+                        </div>
+                        <p>
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center item-notifi">
+                    <div class="img-notifi p-3">
+                        <i class="fa-solid fa-share icon-nitifi"></i>
+                    </div>
+                    <div class="px-4">
+                        <div class="d-flex justify-content-between align-items-center pb-4">
+                            <h5>تم الرد على إعلانك</h5>
+                            <button
+                            type="button "
+                            class="btn-close m-0"
+                            aria-label="Close"
+                          >
+                           
+                          </button>
+                        </div>
+                        <p>
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center item-notifi">
+                    <div class="img-notifi p-3">
+                        <i class="fa-solid fa-share icon-nitifi"></i>
+                    </div>
+                    <div class="px-4">
+                        <div class="d-flex justify-content-between align-items-center pb-4">
+                            <h5>تم الرد على إعلانك</h5>
+                            <button
+                            type="button "
+                            class="btn-close m-0"
+                            aria-label="Close"
+                          >
+                           
+                          </button>
+                        </div>
+                        <p>
+                            هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+          <nav class="navbar navbar-expand-lg">
+              <div class="row w-100 justify-content-between">
+                  <div class="col-auto">
+                      <ul>
+                          <li class="nav-item">
+                              <a href="Calculation.html" class="nav-link">حساب وسداد العمولة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="featured.html" class="nav-link">الاعلانات
+                                  المميزة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="membership.html" class="nav-link">الإشتراك
+                                  بعضوية معارض السيارات ومكاتب العقار</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="goods-services.html" class="nav-link">سداد
+                                  رسوم السلع والخدمات المكررة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="ads.html" class="nav-link">طلب
+                                  تقرير سيارة</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-auto">
+                      <ul>
+                          <li class="nav-item">
+
+                              <a href="Agreement.html" class="nav-link">اتفاقية
+                                  الإستخدام</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="Verification.html" class="nav-link">توثيق
+                                  العضوية وإضافة التراخيص</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="evaluation.html" class="nav-link">نظام
+                                  التقييم</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="discount.html" class="nav-link">نظام
+                                  الخصم</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="Blacklist.html" class="nav-link">القائمة
+                                  السوداء وإرشادات التعامل</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-auto">
+                      <ul>
+                          <li class="nav-item">
+
+                              <a href="advertisements.html" class="nav-link">قائمة
+                                  السلع والإعلانات الممنوعة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="common-questions.html" class="nav-link">الأسئلة
+                                  الشائعة</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="contact.html" class="nav-link">اتصل بنا</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+      <div class="sub-footer">
+          <div class="container">
+              <div class="copyRight position-relative">
+                  <a href="https://smartvision4p.com/" class="link"></a>
+                  <p> جميع الحقوق محفوظة لموقع <span>سمارت فيجن</span></p>
+                  <img src="images/logooo.png" alt="">
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- owl-carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- font awesom script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+      integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- rateyo script -->
+    <script src="js/jquery.rateyo.min.js"></script>
+
+    <!-- nice select script -->
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <!-- wow script -->
+    <script src="js/wow.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <!-- aos script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery.print/1.6.2/jQuery.print.min.js" integrity="sha512-t3XNbzH2GEXeT9juLjifw/5ejswnjWWMMDxsdCg4+MmvrM+MwqGhxlWeFJ53xN/SBHPDnW0gXYvBx/afZZfGMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+
+  </body>
+</html>
